@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  width: 50vw;
+  height: 30vh;
+  z-index: 100;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas Neue", cursive;
+  .info {
+    text-align: center;
+
+    font-size: 3.1em;
+  }
+  .deadline {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 2em;
+  }
+}
+
+.if {
+  z-index: 100;
+  color: #fff;
+  position: absolute;
+  bottom: 12em;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+}
