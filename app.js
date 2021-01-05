@@ -25,9 +25,15 @@ const weekdays = [
 const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
+const nextYearContainer = document.querySelector('.next-year') 
+const lastYearContainer = document.querySelector('.last-year') 
 
-let futureDate = new Date(2021, 0, 1, 0, 0, 0);
+let nextYear = (new Date().getFullYear()) + 1
 
+nextYearContainer.innerHTML = nextYear
+lastYearContainer.innerHTML = nextYear -1
+
+let futureDate = new Date(nextYear, 0, 1, 0, 0, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
